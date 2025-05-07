@@ -51,6 +51,7 @@ book:
     - part: "金融数据分析"
       chapters: 
         - body/TS_asset_return.qmd
+        - body/TS_lec_ARMA.ipynb
         - body/TS_FRED_US_unemploy_rate.ipynb
         - body/TS_SZ_index.ipynb 
 
