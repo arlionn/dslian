@@ -1,0 +1,76 @@
+project:
+  type: book
+  output-dir: DSbook
+
+book:
+  title: "数据分析"
+  reader-mode: true 
+  author: "连玉君"
+#  date: "`r format(Sys.time(), '%d %B, %Y')`"
+  date: today
+  date-format: iso  # https://quarto.org/docs/reference/dates.html
+#  lang: zh  # 不要设置这个，会导致很多问题
+  
+  sidebar: 
+    title: "<a href='/index.html'>DSbook</a>"  # !important, 否则主页链返回链接会出错
+    logo: images/ds-book-logo-40.png
+    logo-href: https://book.lianxh.cn/DSbook/index.html
+    style: floating  #docked
+    search: true
+    tools:
+      - icon: house-fill
+        href: https://www.lianxh.cn
+      - icon: camera-video-fill
+        href: https://lianxh-class.cn/
+
+  page-footer:
+    center: |
+      [www.lianxh.cn](https://www.lianxh.cn)
+    right: |
+      Support: <a href="https://quarto.org/">Quarto</a>
+  favicon: images/ds-book-logo-40.png   # URL logo
+  site-url: https://book.lianxh.cn/DSbook/index.html # 主页地址, 否则点击右上角链接会乱码
+  editor: source    # 始终采用源代码模式编辑
+
+#----------------------- Chapters ---------------
+  chapters:
+
+    - index.qmd
+
+    - body/_home.qmd
+
+    - part: "**前言**"
+      chapters: 
+        - body/C00-为何学习Python？.qmd
+
+    - part: "语法格式"
+      chapters: 
+        - body/print_02_format.ipynb
+        - body/C05-常用单调凸模型-边际递减.ipynb
+        - body/05.07-Support-Vector-Machines.ipynb
+    - part: "金融数据分析"
+      chapters: 
+        - body/TS_asset_return.qmd
+        - body/TS_FRED_US_unemploy_rate.ipynb
+        - body/TS_SZ_index.ipynb 
+
+format:
+  html:
+    toc: true
+    toc-depth: 3  # 三级以上 sections 才伸缩
+    theme:
+      light: cosmo
+#      dark: [darkly, theme-dark.scss]
+    linestretch: 1.7          # 行间距      
+    fontsize: 11.5pt          # 字号
+    number-sections: true    # 禁用自动章节编号
+    link-external-newwindow: true
+#    html-table-processing: none    
+#    css: _extensions/css_github-Lian.css
+#    include-after-body: footer.html    # https://github.com/oscarbaruffa/BigBookofR
+
+editor: visual
+
+# _quarto_yml refs
+# https://github.com/hadley/r4ds/blob/main/_quarto.yml
+# https://github.com/appliedepi/epiRhandbook_eng/
