@@ -38,20 +38,20 @@ book:
     - index.qmd
 
     - body/_home.qmd
-
-    - part: "**前言**"
+    - part: "**获取数据**"
       chapters: 
-        - body/C00-为何学习Python？.qmd
-
-    - part: "语法格式"
+        - body/data_get_data_GMD.ipynb
+    - part: "**可视化**"
       chapters: 
-        - body/print_02_format.ipynb
-        - body/C05-常用单调凸模型-边际递减.ipynb
-        - body/05.07-Support-Vector-Machines.ipynb
-    - part: "金融数据分析"
+        - body/graph_01_intro.ipynb
+        - body/graph_dis_box_violin.ipynb
+        - body/graph_dis_histogram.ipynb
+        - body/graph_dis_kdensity.ipynb
+    - part: "**时间序列分析**"
       chapters: 
         - body/TS_asset_return.qmd
-        - body/TS_lec_ARMA.ipynb
+        - body/TS_man_weight.ipynb
+        - body/TS_ARMA.ipynb
         - body/TS_FRED_US_unemploy_rate.ipynb
         - body/TS_SZ_index.ipynb 
 

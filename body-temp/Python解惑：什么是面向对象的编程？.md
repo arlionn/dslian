@@ -1,5 +1,7 @@
 ### 引言
 
+> “Python 是一门面向对象的编程语言”  
+
 对于初学 Python 的人而言，“Python 是一门面向对象的编程语言” 这样的表述想必并不陌生。然而，“面向对象”究竟是什么，尤其是“对象”的概念，却常常让人摸不着头脑。以众多 Stata 老用户为例，当他们初次见到下面这段代码时，往往会陷入困惑：
 
 ```python
@@ -19,6 +21,26 @@ model1 = sm.OLS(y, X1).fit()
 在 `mtcars = sm.datasets.get_rdataset('mtcars', 'datasets').data` 这条语句中，呈现出 `sm.A.B().C` 的形式。这里面哪些是函数 (function) ？哪些是方法 (method) ？哪些又是对象的属性呢？要搞清楚这些语句的编写规则，又需要学习哪些概念呢？类似让人费解的语句还有 `model1 = sm.OLS(y, X1).fit()` 。
 
 近一两年，得益于 AI 助手（如豆包、Copilot 等）的助力，很多人得以快速上手 Python。但好景不长，大家很快就会遭遇瓶颈。面对 AI 自动生成的代码，自己往往一知半解，基本不具备调试和修改代码的能力。这就导致在使用 Python 一段时间后，自身编写代码的能力始终难以显著提升，还总是花费大量时间进行调试，从而无法集中精力思考更高级的问题。为此，本文将详细介绍 Python 面向对象编程的核心概念，帮你深入理解 Python 代码的逻辑和结构关系，进而提升编写 Python 代码的能力。接下来，我们就将逐步解答上述代码中的疑问。
+
+For small programs, OOP doesn't add organization so much as it adds bureaucracy. Although some languages, such as Java, require you to organize all your code into classes, Python's OOP features are optional. Programmers can take advantage of classes if they need them or ignore them if they don't. Python core developer Jack Diederich's PyCon 2012 talk, "Stop Writing Classes" (<https://youtu.be/o9pEzgHorH0/>), points out many cases where programmers write classes when a simpler function or module would have worked better.
+
+That said, as a programmer, you should be familiar with the basics of what classes are and how they work. In this chapter, you'll learn what classes are, why they're used in programs, and the syntax and programming concepts behind them. OOP is a broad topic, and this chapter acts only as an introduction.
+
+Real-World Analogy: Filling Out a Form
+--------------------------------------
+
+You've most likely had to fill out paper or electronic forms numerous times in your life: for doctor's visits, for online purchases, or to RSVP to a wedding. Forms exist as a uniform way for another person or organization to collect the information they need about you. Different forms ask for different kinds of information. You would report a sensitive medical condition on a doctor's form, and you would report any guests you're bringing on a wedding RSVP, but not the other way around.
+
+In Python, *class*, *type*, and *data type* have the same meaning. Like a paper or electronic form, a *class* is a blueprint for Python *objects* (also called *instances*), which contain the data that represents a noun. This noun could be a doctor's patient, an ecommerce purchase, or a wedding guest. Classes are like a blank form template, and the objects created from that class are like filled-out forms that contain actual data about the kind of thing the form represents. For example, in [Figure 15-1](https://inventwithpython.com/beyond/chapter15.html#calibre_link-23), the RSVP response form is like a class, whereas the filled-out RSVP is like an object.
+
+![20250509083144](https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/20250509083144.png)
+
+> Note: Wedding RSVP form templates are like classes, and filled-out forms are like objects.  
+> Source: [15 Object-Oriented Programming and Classes](https://inventwithpython.com/beyond/chapter15.html)
+
+You can also think of classes and objects as spreadsheets, 如下图所示. The column headers would make up the class, and the individual rows would each make up an object.
+
+![20250509083406](https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/20250509083406.png)
 
 ### 1. 类（Class）
 类是对象的蓝图或模板，它定义了对象的属性和方法，可将其视为一种自定义的数据类型。以 `Person` 类为例：
