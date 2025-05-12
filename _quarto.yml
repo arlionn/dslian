@@ -54,6 +54,7 @@ book:
         - body/TS_ARMA.ipynb
         - body/TS_FRED_US_unemploy_rate.ipynb
         - body/TS_SZ_index.ipynb 
+        - body/TS_GARCH_BYD.ipynb
 
 format:
   html:
