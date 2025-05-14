@@ -62,13 +62,16 @@
 ## 作业和小组报告
 
 **关于 AI 工具**
+
 - 可以使用 AI 工具写作业和报告，可以使用 AI 写代码
 - 但要提供提示词链接或提示词原文，如：[豆包-SVM 解读](https://www.doubao.com/thread/w9d7da7ee6fa0bc32)；&emsp;[ChatGPT-BAGTE 模型](https://chatgpt.com/share/67f0a7d3-cbcc-8005-857d-bbcfe4e680cd)；&emsp;[连玉君-UseChatGPT](https://github.com/arlionn/UseChatGPT/tree/main/Examples)
 
 **软件**
+
 - 不限制：用 Stata，R，Python 均可
 
 **小组作业：**
+
 - 6-8 次，每个小组有 2 次展示机会 (每次 20mins)
 - 人数：每个小组 3 人 
 - 技能：成员中至少一人会用 Stata；一人会用 Python
@@ -76,15 +79,13 @@
   - 用 [Marp](https://www.lianxh.cn/search.html?s=marp)，[Quarto](https://quarto.org/docs/get-started/) ([Presentation](https://quarto.org/docs/reference/formats/presentations/revealjs.html)) 或其他基于 Markdown 语法的工具制作 Slides
   - 不建议使用 PowerPoint 幻灯片
 
-<!-- --- - -- -->
-
-![20250407175420](https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/20250407175420.png)
 
 <!-- --- -->
 
 ## 参考书
 
 **数据分析**
+
 - Wes McKinney, **2023**. Python for Data Analysis: Data Wrangling with pandas, NumPy, and Jupyter (3E). [Online-Read](https://wesmckinney.com/book/), [github](https://github.com/wesm/pydata-book), [gitee-码云](https://gitee.com/wesmckinn/pydata-book)
   - 专注于数据处理，讲的比较细致 
 
@@ -97,6 +98,7 @@
 <!-- --- - -- -->
 
 **Finance**
+
 - Scheuch, C., Voigt, S., Weiss, P., & Frey, C. (**2024**). **Tidy Finance with Python** (1st ed.). Chapman and Hall/CRC, [Online-Read](https://www.tidy-finance.org/python/index.html), [github](https://github.com/tidy-finance/website/tree/main/python)
   - [tidyfinance package](https://github.com/tidy-finance/py-tidyfinance)
   - 股票回报, CAPM, 投资组合, Fama-French 因子模型等
