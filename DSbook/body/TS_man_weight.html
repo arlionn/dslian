@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>9&nbsp; 时序建模思路：模拟体重变化 – 数据分析</title>
+<title>15&nbsp; 时序建模思路：模拟体重变化 – 数据分析</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -145,7 +145,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../body/TS_asset_return.html"><strong>时间序列分析</strong></a></li><li class="breadcrumb-item"><a href="../body/TS_man_weight.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">时序建模思路：模拟体重变化</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../body/TS_asset_return.html"><strong>时间序列分析</strong></a></li><li class="breadcrumb-item"><a href="../body/TS_man_weight.html"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">时序建模思路：模拟体重变化</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -167,6 +167,7 @@ window.Quarto = {
         <div class="sidebar-tools-main tools-wide">
     <a href="https://www.lianxh.cn" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-house-fill"></i></a>
     <a href="https://lianxh-class.cn/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-camera-video-fill"></i></a>
+    <a href="https://github.com/arlionn/dslian" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
@@ -197,7 +198,7 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text"><strong>获取数据</strong></span></a>
+ <span class="menu-text"><strong>Python 基础</strong></span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -205,8 +206,38 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../body/data_get_data_GMD.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">获取数据：GMD</span></span></a>
+  <a href="../body/01_1_py_install-Python-Anocanda.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Python：安装和环境配置</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../body/01_2_py_FAQs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Python 安装常见问题</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../body/01_py_basic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Python 入门</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../body/01_py_grammer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Python 代码风格</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../body/01_py_QuickReference.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Python 常用命令速查表</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../body/01_py_Useful_Packages.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Python 常用扩展包</span></span></a>
   </div>
 </li>
       </ul>
@@ -214,7 +245,7 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text"><strong>可视化</strong></span></a>
+ <span class="menu-text"><strong>获取数据</strong></span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -222,26 +253,8 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../body/graph_01_intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Python 可视化：简介</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../body/graph_dis_box_violin.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">箱型图和小提琴图：分布特征分析</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../body/graph_dis_histogram.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">直方图</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../body/graph_dis_kdensity.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">核密度函数图</span></span></a>
+  <a href="../body/data_get_data_GMD.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">获取数据：GMD</span></span></a>
   </div>
 </li>
       </ul>
@@ -249,7 +262,7 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text"><strong>时间序列分析</strong></span></a>
+ <span class="menu-text"><strong>可视化</strong></span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -257,38 +270,73 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../body/graph_01_intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Python 可视化：简介</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../body/graph_dis_box_violin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">箱型图和小提琴图：分布特征分析</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../body/graph_dis_histogram.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">直方图</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../body/graph_dis_kdensity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">核密度函数图</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text"><strong>时间序列分析</strong></span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../body/TS_asset_return.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">资产收益率（Asset Returns）</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">资产收益率（Asset Returns）</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../body/TS_man_weight.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">时序建模思路：模拟体重变化</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">时序建模思路：模拟体重变化</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../body/TS_ARMA.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">ARMA 模型</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">ARMA 模型</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../body/TS_FRED_US_unemploy_rate.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">案例：美国失业率和通胀率关系分析</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">案例：美国失业率和通胀率关系分析</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../body/TS_SZ_index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">上证指数的时序特征</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">上证指数的时序特征</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../body/TS_GARCH_BYD.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">GARCH 模型</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">GARCH 模型</span></span></a>
   </div>
 </li>
       </ul>
@@ -303,25 +351,25 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#arp-模型" id="toc-arp-模型" class="nav-link active" data-scroll-target="#arp-模型"><span class="header-section-number">9.1</span> <span class="math inline">\(AR(p)\)</span> 模型</a>
+  <li><a href="#arp-模型" id="toc-arp-模型" class="nav-link active" data-scroll-target="#arp-模型"><span class="header-section-number">15.1</span> <span class="math inline">\(AR(p)\)</span> 模型</a>
   <ul class="collapse">
-  <li><a href="#ar1-过程的平稳性" id="toc-ar1-过程的平稳性" class="nav-link" data-scroll-target="#ar1-过程的平稳性"><span class="header-section-number">9.1.1</span> <span class="math inline">\(AR(1)\)</span> 过程的平稳性</a></li>
+  <li><a href="#ar1-过程的平稳性" id="toc-ar1-过程的平稳性" class="nav-link" data-scroll-target="#ar1-过程的平稳性"><span class="header-section-number">15.1.1</span> <span class="math inline">\(AR(1)\)</span> 过程的平稳性</a></li>
   </ul></li>
-  <li><a href="#带时间趋势项的-ar1-模型" id="toc-带时间趋势项的-ar1-模型" class="nav-link" data-scroll-target="#带时间趋势项的-ar1-模型"><span class="header-section-number">9.2</span> 带时间趋势项的 <span class="math inline">\(AR(1)\)</span> 模型</a></li>
-  <li><a href="#更合理的模拟方式" id="toc-更合理的模拟方式" class="nav-link" data-scroll-target="#更合理的模拟方式"><span class="header-section-number">10</span> 更合理的模拟方式</a>
+  <li><a href="#带时间趋势项的-ar1-模型" id="toc-带时间趋势项的-ar1-模型" class="nav-link" data-scroll-target="#带时间趋势项的-ar1-模型"><span class="header-section-number">15.2</span> 带时间趋势项的 <span class="math inline">\(AR(1)\)</span> 模型</a></li>
+  <li><a href="#更合理的模拟方式" id="toc-更合理的模拟方式" class="nav-link" data-scroll-target="#更合理的模拟方式"><span class="header-section-number">16</span> 更合理的模拟方式</a>
   <ul class="collapse">
-  <li><a href="#引入趋势项-均值回复项趋势-ou过程" id="toc-引入趋势项-均值回复项趋势-ou过程" class="nav-link" data-scroll-target="#引入趋势项-均值回复项趋势-ou过程"><span class="header-section-number">10.1</span> 1. <strong>引入趋势项 + 均值回复项（趋势 + OU过程）</strong></a></li>
-  <li><a href="#进一步改进建议" id="toc-进一步改进建议" class="nav-link" data-scroll-target="#进一步改进建议"><span class="header-section-number">10.2</span> 3. 进一步改进建议</a>
+  <li><a href="#引入趋势项-均值回复项趋势-ou过程" id="toc-引入趋势项-均值回复项趋势-ou过程" class="nav-link" data-scroll-target="#引入趋势项-均值回复项趋势-ou过程"><span class="header-section-number">16.1</span> 1. <strong>引入趋势项 + 均值回复项（趋势 + OU过程）</strong></a></li>
+  <li><a href="#进一步改进建议" id="toc-进一步改进建议" class="nav-link" data-scroll-target="#进一步改进建议"><span class="header-section-number">16.2</span> 3. 进一步改进建议</a>
   <ul class="collapse">
-  <li><a href="#儿童体重的-logistic-增长模型" id="toc-儿童体重的-logistic-增长模型" class="nav-link" data-scroll-target="#儿童体重的-logistic-增长模型"><span class="header-section-number">10.2.1</span> 儿童体重的 Logistic 增长模型</a></li>
+  <li><a href="#儿童体重的-logistic-增长模型" id="toc-儿童体重的-logistic-增长模型" class="nav-link" data-scroll-target="#儿童体重的-logistic-增长模型"><span class="header-section-number">16.2.1</span> 儿童体重的 Logistic 增长模型</a></li>
   </ul></li>
-  <li><a href="#结果特性说明" id="toc-结果特性说明" class="nav-link" data-scroll-target="#结果特性说明"><span class="header-section-number">10.3</span> 结果特性说明</a></li>
-  <li><a href="#三段式样条piecewise-spline函数模型" id="toc-三段式样条piecewise-spline函数模型" class="nav-link" data-scroll-target="#三段式样条piecewise-spline函数模型"><span class="header-section-number">10.4</span> 三段式样条（piecewise spline）函数模型</a>
+  <li><a href="#结果特性说明" id="toc-结果特性说明" class="nav-link" data-scroll-target="#结果特性说明"><span class="header-section-number">16.3</span> 结果特性说明</a></li>
+  <li><a href="#三段式样条piecewise-spline函数模型" id="toc-三段式样条piecewise-spline函数模型" class="nav-link" data-scroll-target="#三段式样条piecewise-spline函数模型"><span class="header-section-number">16.4</span> 三段式样条（piecewise spline）函数模型</a>
   <ul class="collapse">
-  <li><a href="#另一种解释" id="toc-另一种解释" class="nav-link" data-scroll-target="#另一种解释"><span class="header-section-number">10.4.1</span> 另一种解释</a></li>
-  <li><a href="#用-indicator-function-表达模型" id="toc-用-indicator-function-表达模型" class="nav-link" data-scroll-target="#用-indicator-function-表达模型"><span class="header-section-number">10.4.2</span> 用 Indicator Function 表达模型</a></li>
-  <li><a href="#模型解释" id="toc-模型解释" class="nav-link" data-scroll-target="#模型解释"><span class="header-section-number">10.4.3</span> 模型解释</a></li>
-  <li><a href="#边际效应" id="toc-边际效应" class="nav-link" data-scroll-target="#边际效应"><span class="header-section-number">10.4.4</span> 边际效应</a></li>
+  <li><a href="#另一种解释" id="toc-另一种解释" class="nav-link" data-scroll-target="#另一种解释"><span class="header-section-number">16.4.1</span> 另一种解释</a></li>
+  <li><a href="#用-indicator-function-表达模型" id="toc-用-indicator-function-表达模型" class="nav-link" data-scroll-target="#用-indicator-function-表达模型"><span class="header-section-number">16.4.2</span> 用 Indicator Function 表达模型</a></li>
+  <li><a href="#模型解释" id="toc-模型解释" class="nav-link" data-scroll-target="#模型解释"><span class="header-section-number">16.4.3</span> 模型解释</a></li>
+  <li><a href="#边际效应" id="toc-边际效应" class="nav-link" data-scroll-target="#边际效应"><span class="header-section-number">16.4.4</span> 边际效应</a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -330,9 +378,9 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../body/TS_asset_return.html"><strong>时间序列分析</strong></a></li><li class="breadcrumb-item"><a href="../body/TS_man_weight.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">时序建模思路：模拟体重变化</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../body/TS_asset_return.html"><strong>时间序列分析</strong></a></li><li class="breadcrumb-item"><a href="../body/TS_man_weight.html"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">时序建模思路：模拟体重变化</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">时序建模思路：模拟体重变化</span></h1>
+<h1 class="title"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">时序建模思路：模拟体重变化</span></h1>
 </div>
 
 
@@ -361,15 +409,15 @@ window.Quarto = {
 <p>这个模型的含义是，<span class="math inline">\(t\)</span> 时点的体重由三部分构成：(1) 目标体重 <span class="math inline">\(\mu\)</span>；(2) 体重的调整 <span class="math inline">\(\beta_1 (y_{t-1} - \mu)\)</span>；(3) 随机因素 <span class="math inline">\(\varepsilon_{t}\)</span>。</p>
 <p>然而，现实中，想要将体重控制在一个合理的范围内，并非易事，除了要有意志力和自制力，还需要合理安排饮食和锻炼，而这些都是有成本的，即「调整成本」。基于这一观察，可以考虑使用部分调整模型来刻画体重的变化：</p>
 <p><span class="math display">\[y_t - y_{t-1} = \lambda (y_t^* - y_{t-1}) + \epsilon_t\]</span></p>
-<section id="arp-模型" class="level2" data-number="9.1">
-<h2 data-number="9.1" class="anchored" data-anchor-id="arp-模型"><span class="header-section-number">9.1</span> <span class="math inline">\(AR(p)\)</span> 模型</h2>
+<section id="arp-模型" class="level2" data-number="15.1">
+<h2 data-number="15.1" class="anchored" data-anchor-id="arp-模型"><span class="header-section-number">15.1</span> <span class="math inline">\(AR(p)\)</span> 模型</h2>
 <p>在时间序列分析中，<span class="math inline">\(AR(p)\)</span> 模型是最基本的模型之一。它假设当前值与过去 <span class="math inline">\(p\)</span> 个时刻的值存在线性关系。一般形式为：</p>
 <p><span class="math display">\[
 X_t = \phi_1 X_{t-1} + phi_2 X_{t-2} + ... + \phi_p X_{t-p} + \epsilon_t \tag{1}
 \]</span></p>
 <p>其中，<span class="math inline">\(\phi_1, \phi_2, ..., \phi_p\)</span> 是模型参数，<span class="math inline">\(\epsilon_t\)</span> 是白噪声项。</p>
-<section id="ar1-模型" class="level4" data-number="9.1.0.1">
-<h4 data-number="9.1.0.1" class="anchored" data-anchor-id="ar1-模型"><span class="header-section-number">9.1.0.1</span> <span class="math inline">\(AR(1)\)</span> 模型</h4>
+<section id="ar1-模型" class="level4" data-number="15.1.0.1">
+<h4 data-number="15.1.0.1" class="anchored" data-anchor-id="ar1-模型"><span class="header-section-number">15.1.0.1</span> <span class="math inline">\(AR(1)\)</span> 模型</h4>
 <p>当 <span class="math inline">\(p=1\)</span> 时，<span class="math inline">\(AR(1)\)</span> 模型为：</p>
 <p><span class="math display">\[
 X_t = \phi_1 X_{t-1} + \epsilon_t \tag{2}
@@ -395,8 +443,8 @@ X_t = \phi_1^t X_0 + \sum_{i=0}^{t-1} \phi_1^i \epsilon_{t-i} \tag{5}
 <li>模型还体现出“记忆衰减”效应：越接近当前年份的扰动项，其影响越大。例如，<span class="math inline">\(\varepsilon_9\)</span> 的系数为 <span class="math inline">\(\phi_1^1 = 0.9\)</span>，<span class="math inline">\(\varepsilon_8\)</span> 的系数为 <span class="math inline">\(\phi_1^2 = 0.81\)</span>，<span class="math inline">\(\varepsilon_7\)</span> 的系数为 <span class="math inline">\(\phi_1^3 \approx 0.729\)</span>，依此类推，扰动项的影响呈指数递减。</li>
 </ul>
 </section>
-<section id="ar1-过程的平稳性" class="level3" data-number="9.1.1">
-<h3 data-number="9.1.1" class="anchored" data-anchor-id="ar1-过程的平稳性"><span class="header-section-number">9.1.1</span> <span class="math inline">\(AR(1)\)</span> 过程的平稳性</h3>
+<section id="ar1-过程的平稳性" class="level3" data-number="15.1.1">
+<h3 data-number="15.1.1" class="anchored" data-anchor-id="ar1-过程的平稳性"><span class="header-section-number">15.1.1</span> <span class="math inline">\(AR(1)\)</span> 过程的平稳性</h3>
 <p><span class="math inline">\(AR(1)\)</span> 过程的平稳性是指时间序列的均值、方差和自协方差不随时间变化。对于 <span class="math inline">\(AR(1)\)</span> 模型，平稳性条件为： <span class="math display">\[|\phi_1|&lt;1\]</span></p>
 <p>下面，我们来模拟生成几组 <span class="math inline">\(AR(1)\)</span> 过程的数据。</p>
 <p>请思考如下几个问题： - <span class="math inline">\(AR(1)\)</span> 模型能刻画一个人的体重变化吗？ - 不同的 <span class="math inline">\(\phi_1\)</span> 对数据生成有何影响？ - 模拟过程中，假设 <span class="math inline">\(\epsilon_t \sim (0, \sigma^2)\)</span>，参数 <span class="math inline">\(\sigma\)</span> 的取值对数据生成有何影响？ - 如何修改这个模型才能更好地刻画一个人的体重变化？</p>
@@ -444,8 +492,8 @@ X_t = \phi_1^t X_0 + \sum_{i=0}^{t-1} \phi_1^i \epsilon_{t-i} \tag{5}
 <p>分析： - <span class="math inline">\(AR(1)\)</span> 过程的期望值是常数，</p>
 </section>
 </section>
-<section id="带时间趋势项的-ar1-模型" class="level2" data-number="9.2">
-<h2 data-number="9.2" class="anchored" data-anchor-id="带时间趋势项的-ar1-模型"><span class="header-section-number">9.2</span> 带时间趋势项的 <span class="math inline">\(AR(1)\)</span> 模型</h2>
+<section id="带时间趋势项的-ar1-模型" class="level2" data-number="15.2">
+<h2 data-number="15.2" class="anchored" data-anchor-id="带时间趋势项的-ar1-模型"><span class="header-section-number">15.2</span> 带时间趋势项的 <span class="math inline">\(AR(1)\)</span> 模型</h2>
 <ul>
 <li><span class="math inline">\(AR(1)\)</span> 过程的方差是常数，且与 <span class="math inline">\(\phi_1\)</span> 无关</li>
 <li><span class="math inline">\(AR(1)\)</span> 过程的自协方差是常数，且与 <span class="math inline">\(\phi_1\)</span> 无关</li>
@@ -512,10 +560,10 @@ X_t = \phi_1^t X_0 + \sum_{i=0}^{t-1} \phi_1^i \epsilon_{t-i} \tag{5}
 </ul>
 <hr>
 </section>
-<section id="更合理的模拟方式" class="level1" data-number="10">
-<h1 data-number="10"><span class="header-section-number">10</span> 更合理的模拟方式</h1>
-<section id="引入趋势项-均值回复项趋势-ou过程" class="level2" data-number="10.1">
-<h2 data-number="10.1" class="anchored" data-anchor-id="引入趋势项-均值回复项趋势-ou过程"><span class="header-section-number">10.1</span> 1. <strong>引入趋势项 + 均值回复项（趋势 + OU过程）</strong></h2>
+<section id="更合理的模拟方式" class="level1" data-number="16">
+<h1 data-number="16"><span class="header-section-number">16</span> 更合理的模拟方式</h1>
+<section id="引入趋势项-均值回复项趋势-ou过程" class="level2" data-number="16.1">
+<h2 data-number="16.1" class="anchored" data-anchor-id="引入趋势项-均值回复项趋势-ou过程"><span class="header-section-number">16.1</span> 1. <strong>引入趋势项 + 均值回复项（趋势 + OU过程）</strong></h2>
 <p>现实中，体重会随着年龄增长逐渐上升，然后趋于稳定，有轻微波动。这可以用如下模型：</p>
 <p><span class="math display">\[
 W_t = \mu + \theta (W_{t-1} - \mu) + \varepsilon_t
@@ -572,15 +620,15 @@ W_t = \mu + \theta (W_{t-1} - \mu) + \varepsilon_t
 </div>
 </div>
 </section>
-<section id="进一步改进建议" class="level2" data-number="10.2">
-<h2 data-number="10.2" class="anchored" data-anchor-id="进一步改进建议"><span class="header-section-number">10.2</span> 3. 进一步改进建议</h2>
+<section id="进一步改进建议" class="level2" data-number="16.2">
+<h2 data-number="16.2" class="anchored" data-anchor-id="进一步改进建议"><span class="header-section-number">16.2</span> 3. 进一步改进建议</h2>
 <ul>
 <li>若模拟儿童成长，可引入 <strong>非线性增长趋势</strong>（如 logistic 或 spline）；</li>
 <li>若模拟节食、锻炼干预等，可引入 <strong>断点</strong> 或 <strong>政策冲击项</strong>；</li>
 <li>若模拟个体差异，可引入 <strong>随机效应项</strong> 或分组参数。</li>
 </ul>
-<section id="儿童体重的-logistic-增长模型" class="level3" data-number="10.2.1">
-<h3 data-number="10.2.1" class="anchored" data-anchor-id="儿童体重的-logistic-增长模型"><span class="header-section-number">10.2.1</span> 儿童体重的 Logistic 增长模型</h3>
+<section id="儿童体重的-logistic-增长模型" class="level3" data-number="16.2.1">
+<h3 data-number="16.2.1" class="anchored" data-anchor-id="儿童体重的-logistic-增长模型"><span class="header-section-number">16.2.1</span> 儿童体重的 Logistic 增长模型</h3>
 <p>Logistic 函数形式如下：</p>
 <p><span class="math display">\[
 W_t = \frac{W_{\max}}{1 + \exp(-k(t - t_0))} + \varepsilon_t
@@ -636,8 +684,8 @@ W_t = \frac{W_{\max}}{1 + \exp(-k(t - t_0))} + \varepsilon_t
 </div>
 </section>
 </section>
-<section id="结果特性说明" class="level2" data-number="10.3">
-<h2 data-number="10.3" class="anchored" data-anchor-id="结果特性说明"><span class="header-section-number">10.3</span> 结果特性说明</h2>
+<section id="结果特性说明" class="level2" data-number="16.3">
+<h2 data-number="16.3" class="anchored" data-anchor-id="结果特性说明"><span class="header-section-number">16.3</span> 结果特性说明</h2>
 <ul>
 <li>出生阶段体重较低；</li>
 <li>在 <span class="math inline">\(t_0\)</span> 附近（如青春期前后）增长最快；</li>
@@ -645,8 +693,8 @@ W_t = \frac{W_{\max}}{1 + \exp(-k(t - t_0))} + \varepsilon_t
 <li>加入扰动项 <span class="math inline">\(varepsilon_t\)</span>，体现不同孩子之间的个体差异。</li>
 </ul>
 </section>
-<section id="三段式样条piecewise-spline函数模型" class="level2" data-number="10.4">
-<h2 data-number="10.4" class="anchored" data-anchor-id="三段式样条piecewise-spline函数模型"><span class="header-section-number">10.4</span> 三段式样条（piecewise spline）函数模型</h2>
+<section id="三段式样条piecewise-spline函数模型" class="level2" data-number="16.4">
+<h2 data-number="16.4" class="anchored" data-anchor-id="三段式样条piecewise-spline函数模型"><span class="header-section-number">16.4</span> 三段式样条（piecewise spline）函数模型</h2>
 <p>以下是一个 <strong>三段式样条（piecewise spline）函数模型</strong>，用于模拟儿童体重的非线性增长轨迹，具有更灵活的形状变化，适合描述 <strong>婴幼儿期缓慢增长 → 少年期快速增长 → 成年期稳定</strong> 的过程。</p>
 <p>模型设定：三段线性 spline（断点在 <span class="math inline">\(t_1=5\)</span> 岁和 <span class="math inline">\(t_2=12\)</span> 岁）</p>
 <p><span class="math display">\[
@@ -661,11 +709,11 @@ W_t = \beta_0 + \beta_1 t + \beta_2 (t - t_1)_+ + \beta_3 (t - t_2)_+ + ϵ_t
 <li><span class="math inline">\(\beta_3\)</span> 是 12 岁以后增长速度的变动；</li>
 <li><span class="math inline">\(ϵ_t\)</span> 是扰动项，模拟波动与个体差异。</li>
 </ul>
-<section id="另一种解释" class="level3" data-number="10.4.1">
-<h3 data-number="10.4.1" class="anchored" data-anchor-id="另一种解释"><span class="header-section-number">10.4.1</span> 另一种解释</h3>
+<section id="另一种解释" class="level3" data-number="16.4.1">
+<h3 data-number="16.4.1" class="anchored" data-anchor-id="另一种解释"><span class="header-section-number">16.4.1</span> 另一种解释</h3>
 </section>
-<section id="用-indicator-function-表达模型" class="level3" data-number="10.4.2">
-<h3 data-number="10.4.2" class="anchored" data-anchor-id="用-indicator-function-表达模型"><span class="header-section-number">10.4.2</span> 用 Indicator Function 表达模型</h3>
+<section id="用-indicator-function-表达模型" class="level3" data-number="16.4.2">
+<h3 data-number="16.4.2" class="anchored" data-anchor-id="用-indicator-function-表达模型"><span class="header-section-number">16.4.2</span> 用 Indicator Function 表达模型</h3>
 <p>上述三段式样条模型可以用 <strong>Indicator Function</strong> 表达为：</p>
 <p><span class="math display">\[
 W_t = \beta_0 + \beta_1 t + \beta_2 \cdot \mathbb{1}(t &gt; t_1) \cdot (t - t_1) + \beta_3 \cdot \mathbb{1}(t &gt; t_2) \cdot (t - t_2) + \epsilon_t
@@ -679,8 +727,8 @@ W_t = \beta_0 + \beta_1 t + \beta_2 \cdot \mathbb{1}(t &gt; t_1) \cdot (t - t_1)
 <li><span class="math inline">\(\epsilon_t\)</span> 是随机扰动项，模拟个体差异或偶发波动。</li>
 </ul>
 </section>
-<section id="模型解释" class="level3" data-number="10.4.3">
-<h3 data-number="10.4.3" class="anchored" data-anchor-id="模型解释"><span class="header-section-number">10.4.3</span> 模型解释</h3>
+<section id="模型解释" class="level3" data-number="16.4.3">
+<h3 data-number="16.4.3" class="anchored" data-anchor-id="模型解释"><span class="header-section-number">16.4.3</span> 模型解释</h3>
 <ol type="1">
 <li><strong>分段增长</strong>：
 <ul>
@@ -699,8 +747,8 @@ W_t = \beta_0 + \beta_1 t + \beta_2 \cdot \mathbb{1}(t &gt; t_1) \cdot (t - t_1)
 </ul></li>
 </ol>
 </section>
-<section id="边际效应" class="level3" data-number="10.4.4">
-<h3 data-number="10.4.4" class="anchored" data-anchor-id="边际效应"><span class="header-section-number">10.4.4</span> 边际效应</h3>
+<section id="边际效应" class="level3" data-number="16.4.4">
+<h3 data-number="16.4.4" class="anchored" data-anchor-id="边际效应"><span class="header-section-number">16.4.4</span> 边际效应</h3>
 <p>边际效应是指在给定的自变量水平下，因变量对自变量的变化率。对于三段式样条模型，可以通过求导来计算边际效应 <span class="math inline">\(\frac{\partial{y}}{\partial{t}}\)</span>： - 在 <span class="math inline">\(t \leq t_1\)</span> 时，边际效应为 <span class="math inline">\(\frac{\partial{y}}{\partial{t}} \mid_{t \leq t_1}= \beta_1\)</span>；</p>
 <ul>
 <li>在 <span class="math inline">\(t_1 &lt; t \leq t_2\)</span> 时，边际效应为 <span class="math inline">\(\frac{\partial{y}}{\partial{t}} \mid_{t_1 &lt; t \leq t_2}  = \beta_1 + \beta_2\)</span>；</li>
@@ -1195,12 +1243,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../body/TS_asset_return.html" class="pagination-link" aria-label="资产收益率（Asset Returns）">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">资产收益率（Asset Returns）</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">资产收益率（Asset Returns）</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../body/TS_ARMA.html" class="pagination-link" aria-label="ARMA 模型">
-        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">ARMA 模型</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">ARMA 模型</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -22,6 +22,9 @@ book:
         href: https://www.lianxh.cn
       - icon: camera-video-fill
         href: https://lianxh-class.cn/
+      - icon: github
+        href: https://github.com/arlionn/dslian
+
 
   page-footer:
     center: |
@@ -36,8 +39,17 @@ book:
   chapters:
 
     - index.qmd
-
     - body/_home.qmd
+    - body/00-DSFinance-intro.md
+    - part: "**Python 基础**"
+      chapters: 
+        - body/01_1_py_install-Python-Anocanda.md
+        - body/01_2_py_FAQs.ipynb
+        - body/01_py_basic.ipynb
+        - body/01_py_grammer.ipynb
+        - body/01_py_QuickReference.md
+        - body/01_py_Useful_Packages.md
+
     - part: "**获取数据**"
       chapters: 
         - body/data_get_data_GMD.ipynb
@@ -55,6 +67,12 @@ book:
         - body/TS_FRED_US_unemploy_rate.ipynb
         - body/TS_SZ_index.ipynb 
         - body/TS_GARCH_BYD.ipynb
+    - part: "**机器学习**"
+      chapters: 
+        - body/05.07-Support-Vector-Machines-CN.ipynb
+        - body/05.08-Random-Forests.ipynb
+        - body/Ch09-svm-lab.ipynb
+
 
 format:
   html:

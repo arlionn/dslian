@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="连玉君">
-<meta name="dcterms.date" content="2025-05-14">
 
-<title>数据分析</title>
+<title>3&nbsp; Python：安装和环境配置 – 数据分析</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,27 +20,62 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./body/_home.html" rel="next">
-<link href="./images/ds-book-logo-40.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b857c20f0474e0ffbcb4f42802ea7d5c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../body/01_2_py_FAQs.html" rel="next">
+<link href="../body/_home.html" rel="prev">
+<link href="../images/ds-book-logo-40.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-b857c20f0474e0ffbcb4f42802ea7d5c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -83,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">数据分析</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../body/01_1_py_install-Python-Anocanda.html"><strong>Python 基础</strong></a></li><li class="breadcrumb-item"><a href="../body/01_1_py_install-Python-Anocanda.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Python：安装和环境配置</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -98,10 +131,10 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="https://book.lianxh.cn/DSbook/index.html" class="sidebar-logo-link">
-      <img src="./images/ds-book-logo-40.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <img src="../images/ds-book-logo-40.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
     <div class="sidebar-title mb-0 py-0">
-      <a href="./"></a><a href="./index.html">DSbook</a> 
+      <a href="../"></a><a href="../index.html">DSbook</a> 
         <div class="sidebar-tools-main tools-wide">
     <a href="https://www.lianxh.cn" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-house-fill"></i></a>
     <a href="https://lianxh-class.cn/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-camera-video-fill"></i></a>
@@ -123,20 +156,14 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">数据分析</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./body/_home.html" class="sidebar-item-text sidebar-link">
+  <a href="../body/_home.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">About</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./body/00-DSFinance-intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">课程概览</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -150,38 +177,38 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./body/01_1_py_install-Python-Anocanda.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Python：安装和环境配置</span></span></a>
+  <a href="../body/01_1_py_install-Python-Anocanda.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Python：安装和环境配置</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./body/01_2_py_FAQs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Python 安装常见问题</span></span></a>
+  <a href="../body/01_2_py_FAQs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Python 安装常见问题</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./body/01_py_basic.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Python 入门</span></span></a>
+  <a href="../body/01_py_basic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Python 入门</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./body/01_py_grammer.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Python 代码风格</span></span></a>
+  <a href="../body/01_py_grammer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Python 代码风格</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./body/01_py_QuickReference.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Python 常用命令速查表</span></span></a>
+  <a href="../body/01_py_QuickReference.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Python 常用命令速查表</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./body/01_py_Useful_Packages.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Python 常用扩展包</span></span></a>
+  <a href="../body/01_py_Useful_Packages.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Python 常用扩展包</span></span></a>
   </div>
 </li>
       </ul>
@@ -197,8 +224,8 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./body/data_get_data_GMD.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">获取数据：GMD</span></span></a>
+  <a href="../body/data_get_data_GMD.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">获取数据：GMD</span></span></a>
   </div>
 </li>
       </ul>
@@ -214,26 +241,26 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./body/graph_01_intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Python 可视化：简介</span></span></a>
+  <a href="../body/graph_01_intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Python 可视化：简介</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./body/graph_dis_box_violin.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">箱型图和小提琴图：分布特征分析</span></span></a>
+  <a href="../body/graph_dis_box_violin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">箱型图和小提琴图：分布特征分析</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./body/graph_dis_histogram.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">直方图</span></span></a>
+  <a href="../body/graph_dis_histogram.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">直方图</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./body/graph_dis_kdensity.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">核密度函数图</span></span></a>
+  <a href="../body/graph_dis_kdensity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">核密度函数图</span></span></a>
   </div>
 </li>
       </ul>
@@ -249,67 +276,38 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./body/TS_asset_return.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">资产收益率（Asset Returns）</span></span></a>
+  <a href="../body/TS_asset_return.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">资产收益率（Asset Returns）</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./body/TS_man_weight.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">时序建模思路：模拟体重变化</span></span></a>
+  <a href="../body/TS_man_weight.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">时序建模思路：模拟体重变化</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./body/TS_ARMA.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">ARMA 模型</span></span></a>
+  <a href="../body/TS_ARMA.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">ARMA 模型</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./body/TS_FRED_US_unemploy_rate.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">案例：美国失业率和通胀率关系分析</span></span></a>
+  <a href="../body/TS_FRED_US_unemploy_rate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">案例：美国失业率和通胀率关系分析</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./body/TS_SZ_index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">上证指数的时序特征</span></span></a>
+  <a href="../body/TS_SZ_index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">上证指数的时序特征</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./body/TS_GARCH_BYD.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">GARCH 模型</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
- <span class="menu-text"><strong>机器学习</strong></span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./body/05.07-Support-Vector-Machines-CN.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">In-Depth: Support Vector Machines</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./body/05.08-Random-Forests.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">In-Depth: Decision Trees and Random Forests</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./body/Ch09-svm-lab.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Support Vector Machines</span></span></a>
+  <a href="../body/TS_GARCH_BYD.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">GARCH 模型</span></span></a>
   </div>
 </li>
       </ul>
@@ -319,34 +317,34 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#安装-anaconda" id="toc-安装-anaconda" class="nav-link active" data-scroll-target="#安装-anaconda"><span class="header-section-number">3.1</span> 安装 Anaconda</a></li>
+  <li><a href="#安装-vscode" id="toc-安装-vscode" class="nav-link" data-scroll-target="#安装-vscode"><span class="header-section-number">3.2</span> 安装 VScode</a>
+  <ul class="collapse">
+  <li><a href="#建议安装的-vscode-插件" id="toc-建议安装的-vscode-插件" class="nav-link" data-scroll-target="#建议安装的-vscode-插件"><span class="header-section-number">3.2.1</span> 建议安装的 VScode 插件</a></li>
+  </ul></li>
+  <li><a href="#参考资料" id="toc-参考资料" class="nav-link" data-scroll-target="#参考资料"><span class="header-section-number">3.3</span> 参考资料</a></li>
+  <li><a href="#相关推文" id="toc-相关推文" class="nav-link" data-scroll-target="#相关推文"><span class="header-section-number">3.4</span> 相关推文</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../body/01_1_py_install-Python-Anocanda.html"><strong>Python 基础</strong></a></li><li class="breadcrumb-item"><a href="../body/01_1_py_install-Python-Anocanda.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Python：安装和环境配置</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">数据分析</h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Python：安装和环境配置</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>连玉君 </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2025-05-14</p>
-    </div>
-  </div>
   
     
   </div>
@@ -356,12 +354,144 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p> </p>
-<p><img src="images/ds-book-front.png" style="width: 350px"></p>
-<p> </p>
-<p>    <a href="https://www.lianxh.cn">主页</a> || <a href="https://www.lianxh.cn/details/17.html">课程</a> || <a href="https://lianxh-class.cn/">视频</a> || <a href="https://www.lianxh.cn/blogs/all.html">推文</a> || <a href="https://www.lianxh.cn/share.html">资料</a></p>
+<p><br></p>
+<blockquote class="blockquote">
+<p>！<strong>只需安装</strong>：Anaconda + VScode。</p>
+<ul>
+<li>直接使用 Anaconda 中的 Python 环境即可。</li>
+<li>不要单独安装 Python 3.12 / 3.13。</li>
+</ul>
+</blockquote>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>！<strong>只需安装</strong>：Anaconda + VScode。</p>
+<ul>
+<li>直接使用 Anaconda 中的 Python 环境即可。</li>
+<li>不要单独安装 Python 3.12 / 3.13。</li>
+</ul>
+</div>
+</div>
+<p><br></p>
+<p>对于初学者来讲，建议安装 Anaconda 套装。它是一个开源的 Python 发行版，集成了 Python 解释器、包管理器 Conda 和许多常用的科学计算和数据分析库（如 NumPy、Pandas、Matplotlib 等）。</p>
+<p>虽然 Anaconda 自带的编辑器 Jupyter Notebook 很好用，但如果你平时经常用 VScode 写东西，建议安装 <a href="https://www.lianxh.cn/details/1174.html">VScode</a> 作为编辑器。VScode 支持多种编程语言，可以安装各种插件来增强功能。</p>
+<blockquote class="blockquote">
+<p><strong>参考安装教程：</strong></p>
+</blockquote>
+<ul>
+<li><a href="https://blog.csdn.net/weixin_43679228/article/details/147256251">Python运行环境之VSCode与Anaconda安装配置</a></li>
+<li><a href="https://blog.csdn.net/m0_51976564/article/details/136141325">Anaconda + VS Code 的安装与使用</a></li>
+</ul>
+<p>下面是基于我的使用经验总结的安装步骤：</p>
+<section id="安装-anaconda" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="安装-anaconda"><span class="header-section-number">3.1</span> 安装 Anaconda</h2>
+<p>对于多数用户，只需看 Step 1-4 即可。</p>
+<ol type="1">
+<li><p><a href="https://www.anaconda.com/products/distribution#download-section">下载 Anaconda</a>（建议注册一个账号，若不注册，可以点击 <strong>Skip</strong>）。</p></li>
+<li><p>安装 Anaconda。<strong>安装 Anaconda 最重要的事情：</strong></p>
+<ul>
+<li><p><strong>Select Installation Type</strong> 页面，建议选择 <strong>Just Me</strong>，然后点击 <strong>Next</strong>。</p></li>
+<li><p><strong>Choose Install Location</strong> 页面，建议使用默认路径 <code>C:\Users\用户名\Anaconda3</code> 作为 Anaconda 的安装路径，这样可以避免一些潜在的权限和路径问题。<strong>然而，</strong> 如果你的用户名中包含中文字符或空格，建议选择「自定义路径」，并选择一个英文路径，如 <code>C:\myProgram\Anaconda3</code>。</p></li>
+<li><p><strong>Advanced Installation Options</strong> 页面，确保<strong>同时勾选</strong>如下两个选项：</p>
+<ul>
+<li>[√] <code>Add Anaconda to my PATH environment variable</code></li>
+<li>[√] <code>Register Anaconda as my default Python 3.x</code></li>
+</ul>
+<p><img src="https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/20250513210628.png" class="img-fluid"></p></li>
+<li><p>详情参见：<a href="https://blog.csdn.net/weixin_43679228/article/details/147256251">VSCode与Anaconda安装配置</a></p></li>
+</ul></li>
+<li><p>安装完成后，打开 Anaconda Navigator（在开始菜单或应用程序中找到它）。</p></li>
+<li><p>在 Anaconda Navigator 中，你可以创建和管理虚拟环境、安装包、启动 Jupyter Notebook 等。</p></li>
+<li><p>安装完成后，打开 Anaconda Prompt（命令行界面），输入以下命令检查安装是否成功：</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> <span class="at">--version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>如果显示版本号，则表示安装成功。</p></li>
+<li><p>在 Anaconda Prompt 中输入以下命令更新 Conda 到最新版本：</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> update conda</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>创建一个新的虚拟环境（<strong>可选</strong>）：如果你想在一个独立的环境中工作，比如，你要同时使用 Python 3.8 和 Python 3.12，以便完成不同的项目，你可以创建一个新的虚拟环境。输入以下命令创建一个名为 <code>myenv38</code> 的虚拟环境，并安装 Python 3.8：</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">--name</span> myenv38 python=3.8</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>同理，如果你想使用 Python 3.12，你可以创建一个名为 <code>myenv312</code> 的虚拟环境，并安装 Python 3.12：</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">--name</span> myenv312 python=3.12</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>接下来，你可以激活特定的虚拟环境，比如 <strong>myenv38</strong>，输入以下命令：</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate myenv38</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>此时，若执行 <code>canda list</code> 命令，你会看到当前环境中安装的所有包和版本信息；而执行 <code>canda install Stargazer, v = 2.1.1</code>，则会在当前环境中安装 <code>Stargazer</code> 包的 2.1.1 版本。</p></li>
+</ol>
+</section>
+<section id="安装-vscode" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="安装-vscode"><span class="header-section-number">3.2</span> 安装 VScode</h2>
+<ol type="1">
+<li><a href="https://code.visualstudio.com/Download">下载 VScode</a>（选择适合你操作系统的版本）。</li>
+<li>安装 VScode（双击下载的安装包，按照提示完成安装）。</li>
+<li>安装完成后，打开 VScode。</li>
+<li>在 VScode 中，你可以 <a href="https://www.lianxh.cn/details/1490.html">安装各种插件</a> 来增强功能，比如 Python、Jupyter 等。</li>
+</ol>
+<section id="建议安装的-vscode-插件" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="建议安装的-vscode-插件"><span class="header-section-number">3.2.1</span> 建议安装的 VScode 插件</h3>
+<p>如果你不了解 VScode，可以先读一下 <a href="https://www.lianxh.cn/details/1174.html">VScode编辑器</a>。</p>
+<p>有关插件的安装，参见：<a href="https://www.lianxh.cn/details/1490.html">VScode插件：安装、配置和使用</a></p>
+<section id="python-插件" class="level4" data-number="3.2.1.1">
+<h4 data-number="3.2.1.1" class="anchored" data-anchor-id="python-插件"><span class="header-section-number">3.2.1.1</span> Python 插件</h4>
+<blockquote class="blockquote">
+<p><a href="https://www.lianxh.cn/details/1489.html">VScode：实用 Python 插件清单</a></p>
+</blockquote>
+<ul>
+<li>Python</li>
+<li>Jupyter</li>
+<li>Pylance</li>
+<li>Data Wrangler</li>
+<li>GitHub Copilot (首月免费，后续每月 $10.0，使用 Visa 或 Master 信用卡付款)</li>
+<li>GitHub Copilot Chat</li>
+<li>Cline (Copilot 的替代品，Free)</li>
+</ul>
+</section>
+<section id="markdown-插件" class="level4" data-number="3.2.1.2">
+<h4 data-number="3.2.1.2" class="anchored" data-anchor-id="markdown-插件"><span class="header-section-number">3.2.1.2</span> Markdown 插件</h4>
+<blockquote class="blockquote">
+<p><a href="https://www.lianxh.cn/details/1390.html">VScode：实用 Markdown 插件推荐</a></p>
+</blockquote>
+<ul>
+<li>Markdown All in One</li>
+<li>Markdown Preview Enhanced</li>
+<li>Marp (制作<a href="https://www.lianxh.cn/search.html?s=marp">幻灯片</a>)</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="参考资料" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="参考资料"><span class="header-section-number">3.3</span> 参考资料</h2>
+<ul>
+<li><a href="https://www.anaconda.com/">Anaconda 官网</a></li>
+<li><a href="https://docs.conda.io/en/latest/">Conda 官网</a></li>
+<li><a href="https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html#conda-vs-pip">Conda vs pip</a></li>
+<li><a href="https://docs.conda.io/projects/conda/en/latest/user-guide/cheatsheet.html">Conda Cheat Sheet</a><br>
+</li>
+<li><a href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html">Conda Environment Management</a></li>
+<li><a href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-pkgs.html">Conda Package Management</a></li>
+</ul>
+</section>
+<section id="相关推文" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="相关推文"><span class="header-section-number">3.4</span> 相关推文</h2>
+<ul>
+<li>连享会, 2021, <a href="https://www.lianxh.cn/details/563.html">司继春：Python学习建议和资源</a>, 连享会 No.563.</li>
+<li>连小白, 2025, <a href="https://www.lianxh.cn/details/1568.html">Python常用包盘点：经济与金融领域的必备工具包</a>, 连享会 No.1568.</li>
+<li>连玉君, 2024, <a href="https://www.lianxh.cn/details/1489.html">从基础到 AI 助手：Python 用户最爱的 VScode 插件清单</a>, 连享会 No.1489.</li>
+<li>王胜文, 2023, <a href="https://www.lianxh.cn/details/1174.html">VScode编辑器：常用快捷键-Markdown专题</a>, 连享会 No.1174.</li>
+<li>初虹, 2022, <a href="https://www.lianxh.cn/details/1004.html">Markdown-LaTeX：经管人的VSCode配置大全</a>, 连享会 No.1004.</li>
+<li>连玉君, 2024, <a href="https://www.lianxh.cn/details/1390.html">VScode：实用 Markdown 插件推荐</a>, 连享会 No.1390.</li>
+<li>初虹, 2024, <a href="https://www.lianxh.cn/details/1456.html">让「记录」变得简单：Markdown使用详解</a>, 连享会 No.1456.</li>
+<li>宋森安, 2021, <a href="https://www.lianxh.cn/details/656.html">用Markdown制作幻灯片-五分钟学会Marp（上篇）</a>, 连享会 No.656.</li>
+<li>宋森安, 2021, <a href="https://www.lianxh.cn/details/657.html">用Markdown制作幻灯片-五分钟学会Marp（下篇）</a>, 连享会 No.657.</li>
+<li>连玉君, 2022, <a href="https://www.lianxh.cn/details/1059.html">Marp幻灯片模板：用Markdown快速写幻灯片</a>, 连享会 No.1059.</li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -788,10 +918,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../body/_home.html" class="pagination-link" aria-label="About">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">About</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./body/_home.html" class="pagination-link" aria-label="About">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">About</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../body/01_2_py_FAQs.html" class="pagination-link" aria-label="Python 安装常见问题">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Python 安装常见问题</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

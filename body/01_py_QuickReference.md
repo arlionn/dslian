@@ -29,6 +29,7 @@
   - [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)（运行 .ipynb 文件）
   - [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)（智能补全与类型检查）
   - [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) / [ChatGPT 插件](https://marketplace.visualstudio.com/items?itemName=Gencraft.chatgpt-vscode)（AI 辅助编程）
+  - [Data wrangler](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.data-wrangler)（呈现表格）
 
 
 ## 基础语法与变量操作

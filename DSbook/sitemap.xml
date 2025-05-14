@@ -2,15 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://book.lianxh.cn/DSbook/index.html/index.html</loc>
-    <lastmod>2025-05-12T10:49:15.218Z</lastmod>
+    <lastmod>2025-05-14T09:47:20.407Z</lastmod>
   </url>
   <url>
     <loc>https://book.lianxh.cn/DSbook/index.html/body/_home.html</loc>
     <lastmod>2025-05-12T09:04:55.636Z</lastmod>
   </url>
   <url>
+    <loc>https://book.lianxh.cn/DSbook/index.html/body/01_1_py_install-Python-Anocanda.html</loc>
+    <lastmod>2025-05-14T06:21:33.136Z</lastmod>
+  </url>
+  <url>
+    <loc>https://book.lianxh.cn/DSbook/index.html/body/01_2_py_FAQs.html</loc>
+    <lastmod>2025-05-14T04:03:45.468Z</lastmod>
+  </url>
+  <url>
+    <loc>https://book.lianxh.cn/DSbook/index.html/body/01_py_basic.html</loc>
+    <lastmod>2025-05-14T03:33:04.206Z</lastmod>
+  </url>
+  <url>
+    <loc>https://book.lianxh.cn/DSbook/index.html/body/01_py_grammer.html</loc>
+    <lastmod>2025-05-14T03:54:32.488Z</lastmod>
+  </url>
+  <url>
+    <loc>https://book.lianxh.cn/DSbook/index.html/body/01_py_QuickReference.html</loc>
+    <lastmod>2025-05-14T03:55:48.280Z</lastmod>
+  </url>
+  <url>
+    <loc>https://book.lianxh.cn/DSbook/index.html/body/01_py_Useful_Packages.html</loc>
+    <lastmod>2025-05-14T03:41:10.002Z</lastmod>
+  </url>
+  <url>
     <loc>https://book.lianxh.cn/DSbook/index.html/body/data_get_data_GMD.html</loc>
-    <lastmod>2025-05-09T11:38:27.140Z</lastmod>
+    <lastmod>2025-05-12T15:38:56.506Z</lastmod>
   </url>
   <url>
     <loc>https://book.lianxh.cn/DSbook/index.html/body/graph_01_intro.html</loc>
@@ -50,6 +74,6 @@
   </url>
   <url>
     <loc>https://book.lianxh.cn/DSbook/index.html/body/TS_GARCH_BYD.html</loc>
-    <lastmod>2025-05-12T10:39:32.462Z</lastmod>
+    <lastmod>2025-05-12T23:02:29.579Z</lastmod>
   </url>
 </urlset>
